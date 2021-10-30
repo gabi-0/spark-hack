@@ -16,15 +16,31 @@
       crossorigin="anonymous"
     />
 
+    <link href="/css/create-pf.css" rel="stylesheet" />
+
     <title>Hello, world!</title>
   </head>
-  <body class="d-flex">
-    <div class="container">
-      <h1>Hello, world!</h1>
-      <p id="demo">test..</p>
-      <script src="./cities/c.js"></script>
-      <script src="./js/create-profile.js"></script>
-    </div>
+  <body>
+    <img id="image-bg" src='./img/home.jpg'>
+    <div class="container my-4">
+    <div class="d-flex flex-column"><div style="width:30%;"></div><div class="p-1 flex-fill">
+      <div style="width:40%;margin:auto;"><div class="container my-4">
+        <br /><h1>Set up your profile</h1><br /><br /><br /><br />
+        <form autocomplete="off">
+          <div id="home-form" class="p-4 form-group card_form"><div class="autocomplete">
+              <label for="homecity-input">Your hometown</label><br />
+              <input id="homecity-input" class="form-control" name="hometown" type="text" placeholder="Type..." required />
+              </div><br /><div class="f-r">
+              <button id="nextpg" type="button" class="btn btn-outline-info btn-lg rounded-pill float-right " data-bs-toggle="modal" data-bs-target="#postModal">Continue</button></div></div>
+          <div id="desired-form" class="p-4 form-group card_form"><div class="autocomplete">
+              <label for="desiredcity-input">Your desired city</label><br />
+              <input id="desiredcity-input" class="form-control" name="desiredtown" type="text" placeholder="Type..." required />
+              </div><br /><div class="f-r">
+              <button id="sendbtn" type="button" class="btn btn-outline-info btn-lg rounded-pill float-right " data-bs-toggle="modal" data-bs-target="#postModal">Done</button></div></div></form>
+      </div></div>
+    </div><div style="width:30%;"></div></div></div>
+    <script src="./cities/c.js"></script>
+    <script src="./js/create-profile.js"></script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

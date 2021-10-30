@@ -15,13 +15,6 @@ function city_find(str) {
 	return res_arr;
 }
 
-/*city_sugg = document.getElementById("city-suggestions");
-
-document.getElementById("city-input").addEventListener('input', function(e) {
-	res = city_find(e.target.value);
-	city_sugg.textContent = res;
-});*/
-
 
 function autocomplete(inp) {
 

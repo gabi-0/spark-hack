@@ -18,6 +18,7 @@
   "homepage": "https://github.com/gabi-0/spark-hack#readme",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.6.1"
     "firebase": "^9.2.0",
     "firebaseui": "^6.0.0"
   }

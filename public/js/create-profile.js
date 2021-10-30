@@ -86,6 +86,6 @@ sendbtn = document.getElementById("sendbtn");
 sendbtn.addEventListener("click", function(e) {
 	if(document.getElementById("desiredcity-input").value == '') return;
 
-	sendbtn.innerHTML = "Saving <img src='./img/load.gif'>";
+	// sendbtn.innerHTML = "Saving <img src='./img/load.gif'>";
 	sendbtn.setAttribute("disabled", "true");
 });

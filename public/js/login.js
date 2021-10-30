@@ -46,6 +46,7 @@ function showUserDetails(user) {
 function checkAuthState() {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      window.location.replace("mainActivity");
       document.getElementById("LoginScreen").style.display = "none";
       document.getElementById("dashboard").style.display = "block";
       showUserDetails(user);

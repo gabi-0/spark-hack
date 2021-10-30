@@ -34,7 +34,7 @@
               <label for="desiredcity-input">Your desired city</label><br />
               <input id="desiredcity-input" class="form-control" name="desiredtown" type="text" placeholder="Type..." required />
               </div><br /><div class="f-r">
-              <button id="sendbtn" type="button" class="btn btn-outline-info btn-lg rounded-pill">Done</button></div></div></form>
+              <button id="sendbtn" type="button" class="btn btn-outline-info btn-lg rounded-pill" onclick="writeUserData()">Done</button></div></div></form>
       </div>
     </div><div class="div-spacers"></div></div></div>
     <script src="./cities/c.js"></script>
@@ -162,5 +162,9 @@
         </div>
       </nav>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="js/sendProfile.js"></script>
   </body>
 </html>

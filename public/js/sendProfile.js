@@ -39,6 +39,8 @@ function writeUserData() {
             var nameUser = user.email;
             var postListRef = firebase.database().ref('users');
             var newPostRef = postListRef.push();
+            var database = firebase.database();
+            console.log(database);
             newPostRef.set({
                 "user": nameUser,
                 "homecity": homecity,

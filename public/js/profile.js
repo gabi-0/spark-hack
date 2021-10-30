@@ -26,7 +26,22 @@ firebase.auth().onAuthStateChanged((user) => {
     if (user) {
     idImg.src = user.photoURL;
     thisName.innerHTML = user.displayName
-    }
+    var ref = firebase.database().ref('users');
+    console.log(ref);
+    ref.once('value', (snapshot) => {
+      snapshot.forEach((childSnapshot) => {
+        var childKey = childSnapshot.key;
+        var childData = childSnapshot.val();
+        console.log(childData);
+        if(childData.user === user.email)
+        {
+          console.log(childData.homecity);
+          document.getElementById('location').innerHTML = childData.homecity
+          document.getElementById('comunity').innerHTML = childData.desiredcity;
+        }
+    })
+  })
+}
     else{
         window.location.replace('../login')
     }

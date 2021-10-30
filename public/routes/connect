@@ -57,9 +57,9 @@
                 </div>
                 <div class="form-group">
                   <label for="review">Review</label>
-                  <textarea class="form-control" id="review" rows="3"></textarea>
+                  <textarea class="form-control" id="postReview" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-info btn-lg rounded-pill m-4" onclick="writeUserData">Submit</button>
+                <button type="submit" class="btn btn-outline-info btn-lg rounded-pill m-4" onclick="writeUserData()">Submit</button>
               </form>
             </div>
           </div>
@@ -68,14 +68,56 @@
 
 
       <!-- Aici trage toate posturile  -->
-      <div class="container p-3">
+      <div class="container p-3" id='cardss'>
         <div class="card">
           <h5 class="card-header">Featured</h5>
           <div class="card-body">
             <h5 class="card-title">Special title treatment</h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
             <a href="#" class="btn btn-primary">Add Points</a>
-          </div>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commentModal">Comment</a>
+            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showComments">View</a>
+            <div class="modal fade" id="commentModal" tabindex="-1" role="dialog" aria-labelledby="modal_post" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal_comment">Comment</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="review">Add Comment</label>
+                        <textarea class="form-control" id="review" rows="3"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-outline-info btn-lg rounded-pill m-4">Comment</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="showComments" tabindex="-1" role="dialog" aria-labelledby="show-comments" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="show-comments">Show Comment</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Comments</h5>
+                        <p>This is a comment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <div class="card-footer text-muted">
             2 Points
           </div>
@@ -202,5 +244,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
-  <script src="../js/sendToFirestore.js"></script>
+  <script src="../js/sendData.js"></script>
+  <script src="../js/showPosts.js"></script>
 </html>

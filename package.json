@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/gabi-0/spark-hack/issues"
   },
-  "homepage": "https://github.com/gabi-0/spark-hack#readme"
+  "homepage": "https://github.com/gabi-0/spark-hack#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.6.1"
+  }
 }

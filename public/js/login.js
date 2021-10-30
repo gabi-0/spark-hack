@@ -28,7 +28,7 @@ firebase
     sessionStorage.setItem('user name',res.user.displayName);
     sessionStorage.setItem('user email',res.user.email);
     sessionStorage.setItem('user photo',res.user.photoURL)
-    window.location.replace("mainActivity.html");
+    window.location.replace("mainActivity");
   })
   .catch((e) => {
     console.log(e);

@@ -1,0 +1,23 @@
+#rich-black{
+    color: #001011;
+}
+a{
+    text-decoration: none !important;
+    color: #001011 !important;
+}
+#light-gray{
+    color: #6E8898;
+    background-color: #6E8898;
+}
+#light-cyan{
+    color: #D9FFF5;
+    background-color: #D9FFF5;
+}
+#flame{
+    color: #D36135;
+    background-color: #D36135;
+}
+#queen-pink{
+    color: #DDC3D0;
+    background-color: #DDC3D0;
+}

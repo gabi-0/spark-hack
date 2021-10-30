@@ -26,3 +26,12 @@ label {
 button img {
 	width: 1.5rem;
 }
+
+.div-spacers {
+	width:29%;
+}
+@media (max-width: 991.98px) {
+	#big-screen {
+		flex-direction:column !important;
+	}
+}
